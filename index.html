@@ -1,0 +1,1705 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>H </> Coding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="stylesheets/phone.css">
+</head>
+
+<body>
+    <!-- ===============    NAVBAR ======================= -->
+    <div class="container">
+        <nav id="navbar " class="for-bg-black navbar text-light  fixed-top navbar-expand-md">
+            <div class="container">
+                <a href="#"><img class="navLogo" src="assests/pngs/Logo.png" alt="">
+                </a>                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <label class="hamburger">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
+                </button>
+                <div class="d-block d-md-none d-flex">
+
+                    <i  class="fa" style="font-size:24px; margin-right:20px">&#xf07a;</i>
+                    <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+                </div>
+                <form class="for-small-screen d-md-none d-flex" role="search">
+                        <input id="search-box-small" class="form-control navSearch me-2 hide" type="search" placeholder="Search" aria-label="Search">
+                        <span id="search-icon-small" class="search-icon" onclick="toggleSearch('small')">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                </form>
+                    
+                <div class="collapse   navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light ">
+                        <li class="nav-item">
+                            <a class="nav-link top-nav active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav active" aria-current="page" href="#">ONE PAGE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav active" aria-current="page" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav active" aria-current="page" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav active" aria-current="page" href="#">ELEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav active" aria-current="page" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  top-nav active" aria-current="page" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item d-lg-block d-none" >
+                            <a class="nav-link  active" aria-current="page" href="#"><i
+                                    class="fa-sharp fa-solid fa-cart-shopping"></i>(0) ITEMS</a>
+                        </li>
+                        <li class="nav-item dis-tablet" >
+                            <a class="nav-link  active" aria-current="page" href="#"><i  class="fa" style="font-size:24px; margin-right:20px">&#xf07a;</i>
+                                <span class='badge badge-warning' id='lblCartCount'> 0 </span></a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="d-flex d-sm-flex align-items-center d-none for-large-screen" role="search">
+                        <input id="search-box-large" class="form-control navSearch me-2 hide" type="search" placeholder="Search" aria-label="Search">
+                        <span id="search-icon-large" class="search-icon" onclick="toggleSearch('large')">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ======================= HERO SECTION ================= -->
+    <div class="heroSection">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assests/images/hero1.jpg" class="d-block " alt="...">
+                    <div class="heroOverlay">
+                        <div class="heroContent">
+                            <h1>
+                                EXPERTISE
+                            </h1>
+                        </div>
+                        <div class="heroPara">
+                            <p class="hero-para">WE CRAFT UNIQUE DIGITAL EXPERIENCES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assests/images/hero2.jpg" class="d-block " alt="...">
+                    <div class="heroOverlay">
+                        <div class="heroContent">
+                            <h1>
+                                EXPERTISE
+                            </h1>
+                        </div>
+                        <div class="heroPara">
+                            WE CRAFT UNIQUE DIGITAL EXPERIENCES
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assests/images/hero3.jpg" class="d-block " alt="...">
+                    <div class="heroOverlay">
+                        <div class="heroContent">
+                            <h1>
+                                EXPERTISE
+                            </h1>
+                        </div>
+                        <div class="heroPara">
+                            WE CRAFT UNIQUE DIGITAL EXPERIENCES
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ===================== ABOUT SECTION ======================= -->
+    <div class="container">
+        <div class="about">
+            <div class="about-text aboutpara">
+                EST. 2011
+            </div>
+            <div class="about-text aboutHeading">
+                <h2>A DIGITALSTUDIO CRAFTING BEAUTIFULL EXPERIENCES.</h2>
+            </div>
+            <div class=" about-text aboutLastPara">
+                <p>
+                    We've been carfting beautifull websites. launching stunnnig brands and making clients
+                    happy for years. With our prestigious craftsmanship, remarkable client care and passion for
+                    design.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+    <div class="container-fluid about-navbar">
+        <div class="container mt-3 ">
+
+            <ul class="d-flex justify-content-center align-items-center flex-wrap">
+                <li class="about-navitem  list-unstyled  fw-bold "><a class="text-decoration-none text-dark"
+                        href="#">WEB DESIGN</a>
+                    <span>/</span>
+                </li>
+                <li class=" about-navitem list-unstyled  fw-bold "><a class="text-decoration-none text-dark"
+                        href="#">GRAPHIC</a>
+                    <span>/</span>
+                </li>
+                <li class="about-navitem  list-unstyled  fw-bold "><a class="text-decoration-none text-dark"
+                        href="#">MAGENTO</a>
+                    <span>/</span>
+                </li>
+                <li class="about-navitem  list-unstyled  fw-bold "><a class="text-decoration-none text-dark"
+                        href="#">WORDPRESS</a>
+                    <span>/</span>
+                </li>
+                <li class="about-navitem  list-unstyled  fw-bold "><a class="text-decoration-none text-dark"
+                        href="#">APPLICATIONS</a>
+                </li>
+                <!-- <li class="list-unstyled  fw-bold "> <a class="nav-link text-uppercase  " >Podcasts</a></li>
+                <li class="list-unstyled  fw-bold "> <a class="nav-link text-uppercase default   "  >Ebooks</a></li> -->
+            </ul>
+
+        </div>
+    </div>
+
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ======================ABOUT 2 =============================== -->
+
+    <div class="container about2-container">
+        <div class="about2-top-heading">
+            <h2>WHY CHOOSE US? </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 about2 ">
+                <div class="about2-icon">
+                    <img class="svg-icon" src="assests/images/desktop.svg" alt="">
+                </div>
+                <div class="about2-content">
+                    <div class="about2-content-heading">
+                        <h6>ELEGENT / UNIQUE DESIGN</h6>
+                    </div>
+                    <div class="about2-content-span">
+                        <p></p>
+                    </div>
+                    <div class="about2-content-para">
+                        <p> Lorem, ipsum. Lorem ipsum dolor i tf is consectur adipisid elit. Nesciunt tousts sett sdrt yrw sequi  sunt montor
+                        is shrty </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 about2 ">
+                <div class="about2-icon">
+                    <img class="svg-icon" src="assests/images/trophy.svg" alt="">
+                </div>
+                <div class="about2-content">
+                    <div class="about2-content-heading">
+                        <H6>PARALLAX SLIDER</H6>
+                    </div>
+                    <div class="about2-content-span">
+                        <p></p>
+                    </div>
+                    <div class="about2-content-para">
+                        <p> Lorem, ipsum. Lorem ipsum dolor i tf is consectur adipisid elit. Nesciunt tousts sett sdrt yrw sequi  sunt montor
+                            is shrty </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 about2 ">
+                <div class="about2-icon ">
+                    <img class="svg-icon" class="svg-icon" src="assests/images/hot-air-balloon-svgrepo-com.svg" alt="">
+                </div>
+                <div class="about2-content">
+                    <div class="about2-content-heading">
+                        <H6>DIFFERENT LAYPOUT TYPE</H6>
+                    </div>
+                    <div class="about2-content-span">
+                        <p></p>
+                    </div>
+                    <div class="about2-content-para">
+                        <p> Lorem, ipsum. Lorem ipsum dolor i tf is consectur adipisid elit. Nesciunt tousts sett sdrt yrw sequi  sunt montor
+                            is shrty </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 about2 ">
+                <div class="about2-icon">
+                    <img class="svg-icon" src="assests/images/target1.svg" alt="">
+                </div>
+                <div class="about2-content">
+                    <div class="about2-content-heading">
+                        <H6>TRUE RESPONSIVENESS</H6>
+                    </div>
+                    <div class="about2-content-span">
+                        <p></p>
+                    </div>
+                    <div class="about2-content-para">
+                        <p> Lorem, ipsum. Lorem ipsum dolor i tf is consectur adipisid elit. Nesciunt tousts sett sdrt yrw sequi  sunt montor
+                            is shrty </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 about2 ">
+                <div class="about2-icon">
+                    <img class="svg-icon" src="assests/images/scissor.svg" alt="">
+                </div>
+                <div class="about2-content">
+                    <div class="about2-content-heading">
+                        <H6> LIGHTBOX PHOTO GALLERY</H6>
+                    </div>
+                    <div class="about2-content-span">
+                        <p></p>
+                    </div>
+                    <div class="about2-content-para">
+                        <p> Lorem, ipsum. Lorem ipsum dolor i tf is consectur adipisid elit. Nesciunt tousts sett sdrt yrw sequi  sunt montor
+                            is shrty </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 about2 ">
+                <div class="about2-icon">
+                    <img class="svg-icon" src="assests/images/pencil.svg" alt="">
+                </div>
+                <div class="about2-content">
+                    <div class="about2-content-heading">
+                        <H6>SKILL AND ACCORDIANS</H6>
+                    </div>
+                    <div class="about2-content-span">
+                        <p></p>
+
+                    </div>
+                    <div class="about2-content-para">
+                        <p> Lorem, ipsum. Lorem ipsum dolor i tf is consectur adipisid elit. Nesciunt tousts sett sdrt yrw sequi  sunt montor
+                            is shrty </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!--  ======================== INFORMATION SECTION ================== -->
+ <div class="text-center" id="shiva">
+    <div class="caontainer-fluid information-container">
+        <img class="img-fluid" src="assests/images/info.jpg" alt="">
+        <div class="information-overlay">
+            <div class="container">
+                <div class="infomations">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="likes information">
+                                <div>
+                                    <svg class="info-svg" fill="#ffffff" height="64px" width="64px" version="1.1"
+                                        id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.70 471.70"
+                                        xml:space="preserve" stroke="#000000" stroke-width="0.004717010000000001">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g>
+                                                <path
+                                                    d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                                            </g>
+                                        </g>
+
+                                    </svg>
+                                </div>
+                                <div class="counter">
+                                    <h4 class="counter-value count" data-count="312">
+                                        0
+                                    </h4>
+                                </div>
+                                <p>
+                                    PIZZAS ORDERD
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="reactions information">
+                                <div>
+                                    <svg class="info-svg" width="64px" height="64px" viewBox="-3 0 32 32" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#000000">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="icomoon-ignore"> </g>
+                                            <path
+                                                d="M12.8 3.2c-7.093 0-12.8 5.707-12.8 12.8s5.707 12.8 12.8 12.8c7.093 0 12.8-5.707 12.8-12.8s-5.707-12.8-12.8-12.8zM12.8 27.733c-6.453 0-11.733-5.28-11.733-11.733s5.28-11.733 11.733-11.733c6.453 0 11.733 5.28 11.733 11.733s-5.28 11.733-11.733 11.733z"
+                                                fill="#ffffff"> </path>
+                                            <path
+                                                d="M19.467 19.040c-0.267-0.107-0.587-0.053-0.693 0.213-1.173 2.293-3.467 3.68-5.973 3.68-2.56 0-4.8-1.387-5.973-3.68-0.107-0.267-0.427-0.373-0.693-0.213-0.267 0.107-0.373 0.427-0.267 0.693 1.333 2.613 3.947 4.267 6.933 4.267 2.933 0 5.6-1.653 6.88-4.267 0.16-0.267 0.053-0.587-0.213-0.693z"
+                                                fill="#ffffff"> </path>
+                                            <path
+                                                d="M10.133 13.333c0 0.884-0.716 1.6-1.6 1.6s-1.6-0.716-1.6-1.6c0-0.884 0.716-1.6 1.6-1.6s1.6 0.716 1.6 1.6z"
+                                                fill="#ffffff"> </path>
+                                            <path
+                                                d="M18.667 13.333c0 0.884-0.716 1.6-1.6 1.6s-1.6-0.716-1.6-1.6c0-0.884 0.716-1.6 1.6-1.6s1.6 0.716 1.6 1.6z"
+                                                fill="#ffffff"> </path>
+                                        </g>
+
+                                    </svg>
+                                </div>
+                                <div class="counter">
+                                    <h4 class="count" data-count="980">
+                                        0
+                                    </h4>
+                                </div>
+                                <p>
+                                    HAPPY CLIENTS
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="achivments information">
+                                <div>
+                                    <svg class="info-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px"
+                                        viewBox="0 0 35 32" enable-background="new 0 0 35 32" xml:space="preserve"
+                                        fill="#000000">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g>
+                                                <path fill="#ffffff"
+                                                    d="M0.812,18.896L3,16.707V17.5C3,25.089,9.911,32,17.5,32S32,25.089,32,17.5v-0.772l2.209,2.209 c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146c0.195-0.195,0.195-0.512,0-0.707l-3.018-3.018 C31.807,15.087,31.667,15,31.5,15c-0.045,0-0.084,0.014-0.126,0.025c-0.092,0.019-0.181,0.054-0.249,0.121l-3.042,3.042 c-0.195,0.195-0.195,0.512,0,0.707s0.512,0.195,0.707,0L31,16.686V17.5c0,6.898-6.135,13.177-13,13.472V12h8.5 c0.276,0,0.5-0.224,0.5-0.5S26.776,11,26.5,11H18V6.949c1.692-0.245,3-1.691,3-3.449C21,1.57,19.43,0,17.5,0S14,1.57,14,3.5 c0,1.758,1.308,3.204,3,3.449V11H8.5C8.224,11,8,11.224,8,11.5S8.224,12,8.5,12H17v18.972C10.135,30.677,4,24.398,4,17.5v-0.793 l2.23,2.23c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146c0.195-0.195,0.195-0.512,0-0.707l-3.083-3.082 C3.764,15.056,3.638,15,3.5,15s-0.264,0.056-0.354,0.147l-3.041,3.041c-0.195,0.195-0.195,0.512,0,0.707S0.617,19.091,0.812,18.896 z M17.5,1C18.878,1,20,2.121,20,3.5S18.878,6,17.5,6S15,4.879,15,3.5S16.122,1,17.5,1z" />
+                                            </g>
+                                        </g>
+
+                                    </svg>
+                                </div>
+                                <div class="counter">
+                                    <h4 class="counter-value pending count" data-count="595">
+                                        0
+                                    </h4>
+                                </div>
+                                <p>
+                                    PROJECTS COMPLETED
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="comments information">
+                                <div>
+                                    <svg class="info-svg" fill="#ffffff" width="64px" height="64px" viewBox="0 0 32 32"
+                                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>comment-ellipsis</title>
+                                            <path
+                                                d="M16.5 2.353c-7.857 0-14.25 5.438-14.25 12.124 0.044 2.834 1.15 5.402 2.938 7.33l-0.006-0.007c-0.597 2.605-1.907 4.844-3.712 6.569l-0.005 0.005c-0.132 0.135-0.214 0.32-0.214 0.525 0 0.414 0.336 0.75 0.75 0.751h0c0.054-0 0.107-0.006 0.158-0.017l-0.005 0.001c3.47-0.559 6.546-1.94 9.119-3.936l-0.045 0.034c1.569 0.552 3.378 0.871 5.262 0.871 0.004 0 0.009 0 0.013 0h-0.001c7.857 0 14.25-5.439 14.25-12.125s-6.393-12.124-14.25-12.124zM16.5 25.102c-0.016 0-0.035 0-0.054 0-1.832 0-3.586-0.332-5.205-0.94l0.102 0.034c-0.058-0.018-0.126-0.029-0.195-0.030h-0.001c-0.020-0.002-0.036-0.009-0.056-0.009 0 0-0 0-0 0-0.185 0-0.354 0.068-0.485 0.18l0.001-0.001c-0.010 0.008-0.024 0.004-0.034 0.013-1.797 1.519-3.97 2.653-6.357 3.243l-0.108 0.023c1.29-1.633 2.215-3.613 2.619-5.777l0.013-0.083c0-0.006 0-0.014 0-0.021 0-0.021-0.001-0.043-0.003-0.064l0 0.003c0-0.005 0-0.010 0-0.015 0-0.019-0.001-0.037-0.002-0.055l0 0.002c-0.004-0.181-0.073-0.345-0.184-0.47l0.001 0.001-0.011-0.027c-1.704-1.697-2.767-4.038-2.791-6.626l-0-0.005c0-5.858 5.72-10.624 12.75-10.624s12.75 4.766 12.75 10.624c0 5.859-5.719 10.625-12.75 10.625zM17.019 12.143c-1.444 0-2.615 1.171-2.615 2.616s1.171 2.616 2.616 2.616 2.616-1.171 2.616-2.616c0-0 0-0 0-0.001v0c-0.002-1.444-1.172-2.614-2.616-2.615h-0zM17.019 15.874c-0.616-0-1.115-0.5-1.115-1.116s0.5-1.116 1.116-1.116c0.616 0 1.115 0.499 1.116 1.115v0c-0.001 0.616-0.5 1.115-1.116 1.116h-0zM10.176 12.143c-1.444 0-2.615 1.171-2.615 2.616s1.171 2.616 2.616 2.616 2.616-1.171 2.616-2.616c0-0 0-0 0-0.001v0c-0.002-1.444-1.172-2.614-2.616-2.615h-0zM10.176 15.874c-0.616-0-1.115-0.5-1.115-1.116s0.5-1.116 1.116-1.116c0.616 0 1.115 0.499 1.116 1.115v0c-0.001 0.616-0.5 1.115-1.116 1.116h-0zM23.861 12.143c-0 0-0 0-0 0-1.445 0-2.616 1.171-2.616 2.616s1.171 2.616 2.616 2.616c1.445 0 2.616-1.171 2.616-2.616 0-0 0-0 0-0.001v0c-0.002-1.444-1.172-2.613-2.615-2.615h-0zM23.861 15.874c-0 0-0 0-0 0-0.616 0-1.116-0.5-1.116-1.116s0.5-1.116 1.116-1.116c0.616 0 1.115 0.499 1.116 1.115v0c-0.001 0.616-0.5 1.114-1.115 1.116h-0z" />
+                                        </g>
+
+                                    </svg>
+
+                                </div>
+                                <div class="counter">
+                                    <h4 class="counter-value pending count" data-count="803">
+                                        0
+                                    </h4>
+                                </div>
+                                <p>
+                                    COMMENTS RESERVED
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- -==================== WORK SECTION ========================= -->
+    <div class="container work-section">
+        <div class="work">
+            <h5>LATEST WORK</h5>
+            <P>We are technology leaders and have crafted intuitive and lasting online mobile experiances for
+                hunderds of associations and non-profits.</P>
+
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ==================================== GRID IMAGES SECTION NAVBAR ===================== -->
+    <div class="container images-grid pb-3">
+
+
+
+        <div class="">
+            <ul class="middle-nav mx-auto d-flex justify-content-center ">
+                <li class="mid-li list-unstyled ">
+                    <a class="nav-link active work-nav" aria-current="page" href="#">ALL</a>
+                </li>
+                <li class="mid-li list-unstyled">
+                    <a class="nav-link work-nav " href="#">HTML</a>
+                </li>
+                <li class="mid-li list-unstyled">
+                    <a class="nav-link work-nav" href="#">JQUERY</a>
+                </li>
+                <li class="mid-li list-unstyled">
+                    <a class="nav-link work-nav" href="#">MAGENTO</a>
+                </li>
+                <li class="mid-li list-unstyled">
+                    <a class="nav-link work-nav" href="#">WORDPRESS</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!--  =========================== GRID IMAGES SECTION ============================= -->
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img class="img-fluid" src="assests/images/workL1.jpg" alt="Image 1">
+
+        </div>
+        <div class="grid-item">
+            <img class="img-fluid" src="assests/images/works1.jpg" alt="Image 1" alt="Image 3">
+            <img class="img-fluid" src="assests/images/works2.jpg" alt="Image 1" alt="Image 3">
+
+        </div>
+        <div class="grid-item">
+            <img class="img-fluid" src="assests/images/workl2.jpg" alt="Image 1" alt="Image 5">
+
+        </div>
+        <div class="grid-item">
+            <img class="img-fluid" src="assests/images/flower.jpg" alt="Image 1" alt="Image 7">
+            <img class="img-fluid" src="assests/images/cat.jpg" alt="Image 1" alt="Image 7">
+
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!--  ========================= WORK BOTTOM SECTION ====================== -->
+
+    <div class="container">
+        <div class="work-bottom">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="work-detail">
+                        <h4>01</h4>
+                        <p>STRATEGY</p>
+                        <div class="for_border">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="work-detail">
+                        <h4>02</h4>
+                        <p>PLANING</p>
+                        <div class="for_border">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="work-detail">
+                        <h4>03</h4>
+                        <p>DEVELOPMENT</p>
+                        <div class="for_border">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="work-detail">
+                        <h4>04</h4>
+                        <p>LAUNCH</p>
+                        <div class="for_border">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ============================== WORK END SECTION ========================== -->
+    <div class="container-fluid work-end">
+        <div class="container">
+            <div class="work-end-content">
+                <div class="work-end-text">
+                    <div class="bagsvg">
+                        <img id="bag-svg" src="assests/images/bag.svg" alt="">
+                    </div>
+                    <p>WANT TO SEE MORE AMAZING WORKS? </p>
+                </div>
+                <div class="work-end-btn">
+                    <a class="btn rounded-0 border-ra btn-outline-warning1 me-3 " href="">VIEW PORTFOLIO</a>
+                    <a class="btn rounded-0 border-ra btn-outline-warning " href="">SUBSCRIBE US</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ========================== SERVICES SECTION =========================== -->
+    <div class="container services">
+        <h5>OUR SERVICES</h5>
+        <div class="services-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-3">
+                    <div class="services-items">
+                        <div class="services-svg">
+                            <img class="img-fluid service-svg" src="assests/images/gallery.svg" alt="">
+                        </div>
+                        <p>BRANDING</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-3">
+                    <div class="services-items">
+                        <div class="services-svg">
+                            <img class="img-fluid  service-svg" src="assests/images/pencil.svg" alt="">
+                        </div>
+                        <p>DESIGN</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-3">
+                    <div class="services-items">
+                        <div class="services-svg">
+                            <img class="img-fluid  service-svg" src="assests/images/mobile.svg" alt="">
+                        </div>
+                        <p>DEVELOPMENT</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-3">
+                    <div class="services-items ser-last">
+                        <div class="services-svg ">
+                            <img class=" img-fluid service-svg" src="assests/images/camera.svg" alt="">
+                        </div>
+                        <p>PHOTOGRAPHY</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ========================== SERVICES BOXES ============================== -->
+    <div class="container-fluid services-m">
+        <div class="services-box">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6 p-0 box-background-image">
+
+                    <div class="d-flex jusstify-content-center flex-column h-100 p-5  box1">
+
+                        <h6>01</h6>
+                        <p>BRANDING</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 box2">
+                        <img class="box2-icon" src="assests/images/box-gallery.svg" alt="">
+                        <h6>INTELLIGENCE IS NOTHING WITHOUT AMBITION.</h6>
+                        <p>Lorem keep it light and add a border for some added definition to the boundaries of your
+                            content. Be sure to look under the hood at the source text ever since the 1500s. </p>
+                        <button class="box-btn" type="button">READ MORE <i
+                                class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!-- ==================== PEOPLE SECTION ============================ -->
+    <div class="container people-container">
+        <div class="people">
+            <h5>KEY PERSON</h5>
+            <p>We are multiple-derscipline design studio with an extensive network of the finest talent, allowing us to
+                build the perfect team to respond to your brief.</p>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!-- ============================= PERSON SECTION -===================== -->
+    <div class="container person-container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 person">
+                <div class="person-img">
+                    <img class="img-fluid" src="assests/images/people1.jpeg" alt="">
+                </div>
+                <div class="person-detail">
+                    <div class="person-name">
+                        <h6>
+                            SARA SMITH
+                        </h6>
+                    </div>
+                    <div class="person-para">
+                        <p>CEATIVE STUDIO HEAD</p>
+                    </div>
+                    <div class="person-bor">
+                        <p></p>
+                    </div>
+                    <div class="person-icon">
+                        <div class="personicon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="personicon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-12 person">
+                <div class="person-img">
+                    <img class="img-fluid" src="assests/images/people2.jpeg" alt="">
+                </div>
+                <div class="person-detail">
+                    <div class="person-name">
+                        <h6>SOMMER CHISTIAN</h6>
+                    </div>
+                    <div class="person-para">
+                        <p>FOUNDER AND CEO</p>
+                    </div>
+                    <div class="person-bor">
+                        <p></p>
+                    </div>
+                    <div class="person-icon">
+                        <div class="personicon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="personicon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-12 person">
+                <div class="person-img">
+                    <img class="img-fluid" src="assests/images/people3.jpeg" alt="">
+                </div>
+                <div class="person-detail">
+                    <div class="person-name">
+                        <h6>JANE LUPKIN</h6>
+                    </div>
+                    <div class="person-para">
+                        <p>MAGENTO DEVELOPER</p>
+                    </div>
+                    <div class="person-bor">
+                        <p></p>
+                    </div>
+                    <div class="person-icon">
+                        <div class="personicon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="personicon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!-- =========================== LAST SLIDER ============================ -->
+    <div class="container-fluid p-0 last-slider">
+
+        <div class="carousel" data-flickity='{ "autoPlay": 1500 }'>
+            <div class="carousel-cell">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="carousel-cell-image " src="assests/images/last-slider.jpg" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="last-slider-card">
+                            <div class="num">
+                                <h1>01</h1>
+                            </div>
+                            <div class="slider-content">
+                                <div class="ls-heading">
+                                    <h5>
+                                        CORINNE PRODUCT
+                                    </h5>
+                                    <P>
+                                        BRAND STRATEGY | GRAPHIC DESIGN
+                                    </P>
+                                </div>
+                                <div class="slider-para">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore commod
+                                        perspiciatis
+                                        ducimus doloremque quia iusto accusamus officiis.</p>
+                                </div>
+                                <div class="slider-btn">
+                                    <button class="ls-btn" type="submit">VIEW CASE STUDY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="carousel-cell-image " src="assests/images/last-slider.jpg" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="last-slider-card">
+                            <div class="num">
+                                <h1>01</h1>
+                            </div>
+                            <div class="slider-content">
+                                <div class="ls-heading">
+                                    <h5>
+                                        CORINNE PRODUCT
+                                    </h5>
+                                    <P>
+                                        BRAND STRATEGY | GRAPHIC DESIGN
+                                    </P>
+                                </div>
+                                <div class="slider-para">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore commod
+                                        perspiciatis
+                                        ducimus doloremque quia iusto accusamus officiis.</p>
+                                </div>
+                                <div class="slider-btn">
+                                    <button class="ls-btn" type="submit">VIEW CASE STUDY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="carousel-cell-image " src="assests/images/last-slider.jpg" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="last-slider-card">
+                            <div class="num">
+                                <h1>01</h1>
+                            </div>
+                            <div class="slider-content">
+                                <div class="ls-heading">
+                                    <h5>
+                                        CORINNE PRODUCT
+                                    </h5>
+                                    <P>
+                                        BRAND STRATEGY | GRAPHIC DESIGN
+                                    </P>
+                                </div>
+                                <div class="slider-para">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore commod
+                                        perspiciatis
+                                        ducimus doloremque quia iusto accusamus officiis.</p>
+                                </div>
+                                <div class="slider-btn">
+                                    <button class="ls-btn" type="submit">VIEW CASE STUDY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!--  -=============================== LAST PERSON IMAGES ========================== -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 lp">
+                <div class="lp-image">
+                    <img class="img-fluid" src="assests/images/lp1.jpeg" alt="">
+                </div>
+                <div class="lp-text">
+                    <p>
+                        Lorem ipsum dolor sit amet gft consectetur id adipisicing elit. Voluptatibus minus provident
+                        corporis quam voluptate fuga cum delectus quos dolor sit amet consectetur adipisicing elit.
+                        Esse, tempore.
+                    </p>
+                </div>
+                <div class="lp-heading">
+                    <h6>
+                        ALEXANDER SMITH - GOOGLE
+                    </h6>
+                </div>
+                <div class="lp-icon">
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 lp">
+                <div class="lp-image">
+                    <img class="img-fluid" src="assests/images/lp2.jpeg" alt="">
+                </div>
+                <div class="lp-text">
+                    <p>
+                        Lorem ipsum dolor sit amet gft consectetur id adipisicing elit. Voluptatibus minus provident
+                        corporis quam voluptate fuga cum delectus quos dolor sit amet consectetur adipisicing elit.
+                        Esse, tempore.
+                    </p>
+                </div>
+                <div class="lp-heading">
+                    <h6>
+                        HERMAN MILLER - APPLE
+                    </h6>
+                </div>
+                <div class="lp-icon">
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 lp">
+                <div class="lp-image">
+                    <img class="img-fluid" src="assests/images/lp3.jpeg" alt="">
+                </div>
+                <div class="lp-text">
+                    <p>
+                        Lorem ipsum dolor sit amet gft consectetur id adipisicing elit. Voluptatibus minus provident
+                        corporis quam voluptate fuga cum delectus quos dolor sit amet consectetur adipisicing elit.
+                        Esse, tempore.
+                    </p>
+                </div>
+                <div class="lp-heading">
+                    <h6>
+                        BRYAN JONHSON - YAHOO
+                    </h6>
+                </div>
+                <div class="lp-icon">
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+
+    <!--  ======================= CARDS=============================== -->
+    <div class="container last-card d-flex justify-content-center align-items-center flex-column">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 lc">
+                <div class="lc-image">
+                    <img class="img-fluid" src="assests/images/lc.jpg" alt="">
+                </div>
+                <div class="lc-heading">
+                    <h5>
+                        STAND POST WITH PICTURE
+                    </h5>
+                    <P>POSTED BY ADMIN | 22 AUGUST 2015</P>
+                </div>
+                <div class="lc-para">
+                    <p>Lorem ipsum, dolor idf  iutr sit amet  consectetur  elit. Recusandae nostrum consectetur eum, maximeyu  pso nobis quibusdam io quia dicta. Deserunt libero laborum autem dolor piuts Lorem, ipsum dolor.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12 lc">
+                <div class="lc-image">
+                    <img class="img-fluid" src="assests/images/lc1.jpg" alt="">
+                </div>
+                <div class="lc-heading">
+                    <h5>
+                        POST WITH FEATURED PICTURE
+                    </h5>
+                    <P>POSTED BY ADMIN | 22 AUGUST 2015</P>
+                </div>
+                <div class="lc-para">
+                    <p>Lorem ipsum, dolor idf  iutr sit amet  consectetur  elit. Recusandae nostrum consectetur eum, maximeyu  pso nobis quibusdam io quia dicta. Deserunt libero laborum autem dolor piuts Lorem, ipsum dolor.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12 lc">
+                <div class="lc-image">
+                    <img class="img-fluid" src="assests/images/lc2.jpg" alt="">
+                </div>
+                <div class="lc-heading">
+                    <h5>
+                        STAND POST WITH SLIDER
+                    </h5>
+                    <P>POSTED BY ADMIN | 22 AUGUST 2015</P>
+                </div>
+                <div class="lc-para">
+                    <p>Lorem ipsum, dolor idf  iutr sit amet  consectetur  elit. Recusandae nostrum consectetur eum, maximeyu  pso nobis quibusdam io quia dicta. Deserunt libero laborum autem dolor piuts Lorem, ipsum dolor.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="lc-btn">
+            <button class="last-card-btn" type="submit">VIEW ALL BLOG</button>
+        </div>
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!-- ======================================= ICONS SLIDER ====================== -->
+
+
+    <div class="only-for-sm">
+        <div class="container-fluid p-0 last-slider">
+
+            <div class="carousel" data-flickity='{ "autoPlay" : 1500}'>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/slider-camera.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/target.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/speaker.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/slider-camera.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/target.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/speaker.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/slider-camera.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/target.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell IS-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 slider-of-icon">
+                                <div class="icon-slider">
+                                    <img class="slider-icon-svg" src="assests/images/speaker.svg" alt="">
+                                </div>
+                                <div class="head-slider">
+                                    <h5>CONSIDERED DESIGN</h5>
+                                </div>
+                                <div class="para-slider">
+                                    <P>We respond directly to a project's objectives.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid p-0 last-slider for-large">
+
+        <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'>
+            <div class="carousel-cell IS-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/slider-camera.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>CONSIDERED DESIGN</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>We respond directly to a project's objectives.</P>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/target.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>CREATIVE COLLABORATION</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>We love working with people who embrace the design.</P>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/speaker.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>IMPECCABLE SERVICE</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>Great services is achived through professionalisam.</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="carousel-cell IS-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/slider-camera.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>CONSIDERED DESIGN</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>We respond directly to a project's objectives.</P>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/target.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>CREATIVE COLLABORATION</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>We love working with people who embrace the design.</P>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/speaker.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>IMPECCABLE SERVICE</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>Great services is achived through professionalisam.</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="carousel-cell IS-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/slider-camera.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>CONSIDERED DESIGN</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>We respond directly to a project's objectives.</P>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/target.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>CREATIVE COLLABORATION</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>We love working with people who embrace the design.</P>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 slider-of-icon">
+                            <div class="icon-slider">
+                                <img class="slider-icon-svg" src="assests/images/speaker.svg" alt="">
+                            </div>
+                            <div class="head-slider">
+                                <h5>IMPECCABLE SERVICE</h5>
+                            </div>
+                            <div class="para-slider">
+                                <P>Great services is achived through professionalisam.</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!-- ============================ LAST BUTTON CONTENT ============================ -->
+    <div class="container">
+        <div class="last-start-btn">
+            <p>WE'D LOVE TO HEAR ABOUT YOUR PROJECT</p>
+            <button type="submit">START NOW</button>
+        </div>
+
+    </div>
+    <!--====================================================================================== -->
+
+
+
+
+
+
+    <!-- =============================== INFORMATION SECTION ============================= -->
+    <hr  class="hr-class">
+    <div class="container">
+        <div class="info-section">
+            <div class="row">
+                <div class="col-md-4 mobile-icon-info top-info ">
+
+                    <img class="info_icon" src="assests/images/info-mobile.svg" alt="">
+                    <a href="#">123-456-7890</a>
+
+                </div>
+                <div class="col-md-4 mail-icon-info top-info ">
+
+
+                    <img class="info_icon" src="assests/images/location.svg" alt="">
+                    <a href="#">VICTORIA, UNITED STATES</a>
+
+                </div>
+                <div class="col-md-4 mail-icon-info top-info ">
+
+                    <img class="info_icon" src="assests/images/mail.svg" alt="">
+
+                    <a href="#">NO-REPLY@DOMAIN.COM</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================================================= -->
+
+
+
+
+
+    <!-- =============================== FOOTER SECTION ================================= -->
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1 ">
+
+        <section class="">
+            <div class="container footer-border text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3 justify-content-between">
+                    <!-- Grid column -->
+                    <div class="footer-about col-md-4 col-lg-4 col-xl-3  mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">ABOUT US</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p  class=" for-margin-para ">
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem is ipsum dolor sit ti amet, consectetur id adipisicing
+                            elit tepf dryh shtug dcnitwt.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 for-md-padding">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 ">COMPANY</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">ABOUT US </a>
+                        </p>
+                        <p class="for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">WHAT WE DO </a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">WHAT WE THINK</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class=" text-dark text-decoration-none a-color">CAREERS</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2  mb-4 for-md-padding">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">SERVICES</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">TEAM MEMBERS</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">TESTIMONALS</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">OUR CLIENTS</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">CAREEERS WITH US</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2  mb-4 for-md-padding">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">SERVICES</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">TEAM MEMBERS</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">TESTIMONALS</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">OUR CLIENTS</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">CAREEERS WITH US</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2  mb-4 p-0 for-md-padding ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">PORTFOLIO</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">SINGLE PROJECTS PAGE 1</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">SINGLE PROJECTS PAGE 2</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">SINGLE PROJECTS PAGE 3</a>
+                        </p>
+                        <p class=" for-margin-para mb-3">
+                            <a href="#!" class="a-color text-dark text-decoration-none">SINGLE PROJECTS PAGE 4</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Footer -->
+
+        <!-- End of .container -->
+        <div class="container p-0">
+            <div>
+                <div class="footer-navbar">
+                    <div class="footer-nav1">
+                        <ul class="footer-nav1-ul">
+                            <li class="f-li ps-0"><a class="f-a" href="#">ABOUT</a></li>
+                            <li class="f-li"><a class="f-a" href="#">BLOG</a></li>
+                            <li class="f-li"><a class="f-a" href="#">CAREERS</a></li>
+                            <li class="f-li"><a class="f-a" href="#">TESTIMONALS</a></li>
+                            <li class="f-li"><a class="f-a" href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav2">
+                        <ul class="footer-nav1-ul">
+                            <li class="f-li f-li-2"><a class="f-a" href="#"><i
+                                        class="fa-brands  fa-facebook-f f-icon"></i></a></li>
+                            <li class="f-li f-li-2"><a class="f-a" href="#"><i
+                                        class="fa-brands  fa-twitter f-icon"></i></a></li>
+                            <li class="f-li f-li-2"><a class="f-a" href="#"><i class="fa fa-globe f-icon"></i></a></li>
+                            <li class="f-li f-li-2"><a class="f-a" href="#"><i
+                                        class="fa-brands  fa-youtube f-icon"></i></a></li>
+                            <li class="f-li f-li-2 pe-0"><a class="f-a" href="#"><i
+                                        class="fa-brands  fa-linkedin-in f-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 0);
+        });
+
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrolled > 0) {
+               // navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        $(document).ready(function() {
+            var shivaSection = $('#shiva');
+          
+            $(window).scroll(function() {
+              // Check if the shiva section is visible in the viewport
+             if (isElementInViewport(shivaSection)) {
+               
+                startCounter();
+             }
+            });
+          
+            function isElementInViewport(element) {
+              var rect = element[0].getBoundingClientRect();
+              return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= $(window).height() &&
+                rect.right <= $(window).width()
+              );
+            }
+            <!-- const counters = document.querySelectorAll('.count'); -->
+            const speed = 4000;
+            function startCounter() {
+              $('.count').each(function(i, counter) {
+                let n;
+                if(i === 0) n = 321;
+                else if(i === 1) n = 980;
+                else if (i === 2) n = 803;
+                else n = 595;
+                // $(this).prop('Counter',n).animate({
+                //   Counter: $(this).text()
+                // }, {
+                //   duration: 1000,
+                //   easing: 'linear',
+                //   step: function(now) {
+                //     console.log(now)
+                //     $(this).text(Math.ceil(now));
+                //   }
+                // });
+                
+                const animate = () => {
+                    const value = n;
+                    const data = +counter.innerText;
+        
+                    const time = value / speed;
+                    if (data < value) {
+                        counter.innerText = Math.ceil(data + time);
+                        setTimeout(animate,20);
+                    } else {
+                        counter.innerText = value;
+                    }
+        
+                }
+        animate();
+
+              });
+            }
+          });
+        
+        function toggleSearch(screenSize) {
+            if (screenSize === 'small') {
+                var searchBox = document.getElementById('search-box-small');
+                var searchIcon = document.getElementById('search-icon-small');
+            } else if (screenSize === 'large') {
+                var searchIcon = document.getElementById('search-icon-large');
+                var searchBox = document.getElementById('search-box-large');
+            }
+    
+            searchBox.classList.toggle('hide');
+            searchIcon.classList.toggle('active');
+            
+        }
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</body>
+
+</html>
